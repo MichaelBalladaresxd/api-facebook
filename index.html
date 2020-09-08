@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API FACEBOOK</title>
+
+    <!-- bootstrap 4.5 -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+      
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0&appId=318395946143348&autoLogAppEvents=1" nonce="1WoIwh0K"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+
+        <div class="card col-md-9 mx-auto mt-5">
+            <div class="card-header">COMPARTIR POST</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 text-center mb-3">
+                        <img src="./img/slider2.png" alt="SLider 2" class="img-fluid">
+                        <button class="btn btn-primary btn-block">Compartir</button>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img src="./img/slider3.png" alt="Slider 3" class="img-fluid">
+                        <button class="btn btn-primary btn-block">Compartir</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card col-md-9 mx-auto mt-5">
+            <div class="card-header">COMPARTIR Y ME GUSTA</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 text-center mb-3">
+                        <button class="btn btn-primary btn-block" id="btnFacebookShared">Compartir Página</button>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <button class="btn btn-primary btn-block fb-like" data-href="https://www.facebook.com/premiosonline.pe" data-width="" data-layout="button" data-action="like" data-size="large" data-share="false">ME GUSTA</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
