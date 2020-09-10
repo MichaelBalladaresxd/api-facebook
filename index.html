@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API FACEBOOK</title>
-
+    
+    <meta property="og:image" content="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <!-- bootstrap 4.5 -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -15,7 +17,6 @@
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
       
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0&appId=318395946143348&autoLogAppEvents=1" nonce="1WoIwh0K"></script>
 
 </head>
 <body>
@@ -26,15 +27,15 @@
         <div class="card col-md-9 mx-auto mt-5">
             <div class="card-header">COMPARTIR POST</div>
             <div class="card-body">
-                <div class="row">
+                <div class="row" id="sharedPost">
                     <div class="col-md-6 text-center mb-3">
-                        <img src="./img/slider2.png" alt="SLider 2" class="img-fluid">
-                        <button class="btn btn-primary btn-block">Compartir</button>
+                        <img src="img/slider2.png" alt="SLider 2" class="img-fluid">
+                        <button class="btn btn-primary btn-block" img-post="img/slider2.png">Compartir</button>
                     </div>
 
                     <div class="col-md-6 text-center">
-                        <img src="./img/slider3.png" alt="Slider 3" class="img-fluid">
-                        <button class="btn btn-primary btn-block">Compartir</button>
+                        <img src="img/slider3.png" alt="Slider 3" class="img-fluid">
+                        <button class="btn btn-primary btn-block" img-post="img/slider3.png">Compartir</button>
                     </div>
                 </div>
             </div>
@@ -65,6 +66,5 @@
 
 
     <script src="./js/index.js"></script>
-    
 </body>
 </html>
