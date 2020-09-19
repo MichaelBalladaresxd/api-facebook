@@ -3,9 +3,9 @@ $(document).ready(function(){
   
 })  
 
-    var idApp = '318395946143348';  //ID DE APLICACION OBTENIDA DE DEVELOPER.FACEBOOK.COM
-    var urlWeb = 'https://facebook.meichtec.com/';  //url pagina web a compartir
-
+    var idApp = '611394026220556';  //ID DE APLICACION OBTENIDA DE DEVELOPER.FACEBOOK.COM
+    var urlWeb = 'https://facebook.meichtec.com/';  //URL DONDE SE ALOJAN LAS IMAGENES A COMPARTIR
+    var webPrincipal = 'https://www.premiosonline.pe/'; //WEB A COMPARTIR 
     //COMPARTIR PAGINA
 
     $("#btnFacebookShared").click(function(e){
@@ -24,7 +24,7 @@ $(document).ready(function(){
       
         FB.ui({
           method: 'share',
-          href: 'https://www.premiosonline.pe/',
+          href: webPrincipal,
           hashtag : '#Practica'
         }, function(response){
             if (response && !response.error_message) {
